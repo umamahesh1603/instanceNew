@@ -25,12 +25,6 @@
           <artifactId>mockito-all</artifactId>
           <version>1.9.5</version>
       </dependency>
-      <dependency>
-          <groupId>org.junit.jupiter</groupId>
-          <artifactId>junit-jupiter-api</artifactId>
-          <version>5.3.2</version>
-          <scope>test</scope>
-      </dependency>
   </dependencies>
 <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
@@ -43,15 +37,15 @@
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jar-plugin</artifactId>
       <version>3.1.0</version>
-      <configuration>
-        <archive>
-          <manifest>
-            <addClasspath>true</addClasspath>
-            <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.stackroute.App</mainClass>
-          </manifest>
-        </archive>
-      </configuration>
+      <!--<configuration>-->
+        <!--<archive>-->
+          <!--<manifest>-->
+            <!--<addClasspath>true</addClasspath>-->
+            <!--<classpathPrefix>lib/</classpathPrefix>-->
+            <!--<mainClass>com.stackroute.App</mainClass>-->
+          <!--</manifest>-->
+        <!--</archive>-->
+      <!--</configuration>-->
     </plugin>
   </plugins>
 </build>
